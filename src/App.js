@@ -42,16 +42,16 @@ function AppNavbar() {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink href="/">Home</NavLink>
+                            <NavLink href="/">Beranda</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#about">About</NavLink>
+                            <NavLink href="#about">Profil</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#sop">SOP</NavLink>
+                            <NavLink href="#sop">Fasilitas</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#asisten">Asisten</NavLink>
+                            <NavLink href="#asisten">Layanan</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="#contact">Contact</NavLink>
