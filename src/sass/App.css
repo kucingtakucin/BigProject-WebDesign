@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Cuprum";
+  src: url("../font/Cuprum/Cuprum-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+#my-App {
+  font-family: "Cuprum", sans-serif;
+}
+#my-App #App-header {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=App.css.map */
