@@ -6,10 +6,13 @@
 }
 #my-App {
   font-family: "Cuprum", sans-serif;
+  background-color: #282c34;
 }
-#my-App #App-header {
-  margin: 0;
-  padding: 0;
+#my-App .App-header .jumbotron {
+  background-color: #282c34;
+}
+#my-App .App-header .jumbotron span.labkom {
+  color: lightblue;
 }
 
 /*# sourceMappingURL=App.css.map */

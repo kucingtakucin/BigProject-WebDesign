@@ -1,5 +1,6 @@
 import React, {Component, useState} from 'react';
 import PropTypes from 'prop-types';
+import logo from './img/logo.svg';
 import {Route, Switch} from "react-router-dom";
 import {
     Collapse,
@@ -34,7 +35,9 @@ function AppNavbar() {
     return (
         <Navbar color="info" dark={true} fixed={true} expand="md" className="App-nav">
             <Container fluid={true} className="text-center">
-                <NavbarBrand href="/" className="font-weight-bold">Labkom</NavbarBrand>
+                <NavbarBrand href="/" className="font-weight-bold">
+                    <img src={logo} alt="Labkom" width="30" height="30" className="d-inline-block align-top mr-1"/>
+                </NavbarBrand>
                 <NavbarToggler onClick={toggle}/>
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
@@ -66,9 +69,9 @@ class AppHeader extends Component {
     render() {
         return (
             <header className="App-header">
-                <Jumbotron className="d-flex flex-column align-items-center justify-content-center">
-                    <h1>Laboratorium Komputasi FMIPA</h1>
-                    <h1>Universitas Sebelas Maret</h1>
+                <Jumbotron className="d-flex flex-column align-items-center justify-content-center m-0">
+                    <h1 className="display-3 font-weight-bold text-light m-0">Laboratorium <span className="labkom">Komputasi</span> FMIPA</h1>
+                    <h1 className="display-4 text-light m-0">Universitas Sebelas Maret</h1>
                 </Jumbotron>
             </header>
         )
