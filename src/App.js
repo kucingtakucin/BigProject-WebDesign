@@ -30,6 +30,7 @@ import {
 } from 'reactstrap';
 import './sass/App.css';
 import Berita from "./components/Berita/Berita";
+import SOP from "./components/SOP/SOP";
 
 class MyApp extends Component {
     render() {
@@ -98,6 +99,7 @@ class AppMain extends Component {
         return (
             <main className="App-main">
                 <Berita/>
+                <SOP/>
             </main>
         )
     }
@@ -113,7 +115,7 @@ class AppFooter extends Component {
     }
 }
 
-class App extends Component {
+export default class App extends Component {
     render() {
         return (
             <React.Fragment>
@@ -353,5 +355,3 @@ PaginationLink.propTypes = {
     tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
     'aria-label': PropTypes.string
 };
-
-export default App;

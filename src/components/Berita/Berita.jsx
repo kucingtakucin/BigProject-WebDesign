@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {
     Button,
     Card,
-    CardBody, CardColumns, CardDeck, CardGroup,
+    CardBody,
     CardImg,
     CardText,
     CardTitle,
@@ -20,10 +20,10 @@ import './Berita.css';
 class Berita extends Component {
     render() {
         return (
-            <section id="Berita" className="p-3 border-bottom border-dark">
+            <section id="Berita" className="p-3 border-bottom">
                 <Container className="themed-container">
                     <Row>
-                        <h1 className="border-bottom pl-4 pr-4">Berita</h1>
+                        <h1 className="border-bottom pl-4 pr-4 mb-4">Berita</h1>
                     </Row>
                     <Row>
                         <Col md="7" className="left-post border-right">
