@@ -2,6 +2,7 @@ import React, {Component, useState} from 'react';
 import PropTypes from 'prop-types';
 import logo from './img/logo.svg';
 import {Route, Switch} from "react-router-dom";
+import {Transition} from 'react-transition-group';
 import {
     Button,
     Card,
@@ -14,7 +15,7 @@ import {
     CardImg,
     CardImgOverlay,
     CardLink,
-    CardSubtitle, CardText, CardTitle,
+    CardSubtitle, CardText, CardTitle, Carousel, CarouselCaption, CarouselControl, CarouselIndicators, CarouselItem,
     Col,
     Collapse,
     Container,
@@ -32,6 +33,7 @@ import './sass/App.css';
 import Berita from "./components/Berita/Berita";
 import SOP from "./components/SOP/SOP";
 import Asisten from "./components/Asisten/Asisten";
+import CarouselLab from "./components/CarouselLab/CarouselLab";
 
 class MyApp extends Component {
     render() {
@@ -99,6 +101,7 @@ class AppMain extends Component {
     render() {
         return (
             <main className="App-main">
+                <CarouselLab/>
                 <Berita/>
                 <SOP/>
                 <Asisten/>
@@ -371,4 +374,68 @@ Media.propTypes = {
     right: PropTypes.bool,
     tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
     top: PropTypes.bool,
+};
+
+Carousel.propTypes = {
+    // the current active slide of the carousel
+    activeIndex: PropTypes.number,
+    // a function which should advance the carousel to the next slide (via activeIndex)
+    next: PropTypes.func.isRequired,
+    // a function which should advance the carousel to the previous slide (via activeIndex)
+    previous: PropTypes.func.isRequired,
+    // controls if the left and right arrow keys should control the carousel
+    keyboard: PropTypes.bool,
+    /* If set to "hover", pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on
+     * mouseleave. If set to false, hovering over the carousel won't pause it. (default: "hover")
+     */
+    pause: PropTypes.oneOf(['hover', false]),
+    // Autoplays the carousel after the user manually cycles the first item. If "carousel", autoplays the carousel on load.
+    // This is how bootstrap defines it... I would prefer a bool named autoplay or something...
+    ride: PropTypes.oneOf(['carousel']),
+    // the interval at which the carousel automatically cycles (default: 5000)
+    // If set to false, carousel will not Autoplay (i.e. will not automatically cycle).
+    interval: PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.string,
+        PropTypes.bool,
+    ]),
+    children: PropTypes.array,
+    // called when the mouse enters the Carousel
+    mouseEnter: PropTypes.func,
+    // called when the mouse exits the Carousel
+    mouseLeave: PropTypes.func,
+    // controls whether the slide animation on the Carousel works or not
+    slide: PropTypes.bool,
+    cssModule: PropTypes.object,
+    // controls whether the touch gestures on the Carousel works or not (default: true)
+    enableTouch: PropTypes.bool,
+};
+
+CarouselItem.propTypes = {
+    ...Transition.propTypes,
+    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+    in: PropTypes.bool,
+    cssModule: PropTypes.object,
+    children: PropTypes.node,
+    slide: PropTypes.bool,
+};
+
+CarouselControl.propTypes = {
+    direction: PropTypes.oneOf(['prev', 'next']).isRequired,
+    onClickHandler: PropTypes.func.isRequired,
+    cssModule: PropTypes.object,
+    directionText: PropTypes.string
+};
+
+CarouselIndicators.propTypes = {
+    items: PropTypes.array.isRequired,
+    activeIndex: PropTypes.number.isRequired,
+    cssModule: PropTypes.object,
+    onClickHandler: PropTypes.func.isRequired
+};
+
+CarouselCaption.propTypes = {
+    captionHeader: PropTypes.node,
+    captionText: PropTypes.node.isRequired,
+    cssModule: PropTypes.object
 };
