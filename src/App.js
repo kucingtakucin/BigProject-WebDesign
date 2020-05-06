@@ -31,6 +31,7 @@ import {
 import './sass/App.css';
 import Berita from "./components/Berita/Berita";
 import SOP from "./components/SOP/SOP";
+import Asisten from "./components/Asisten/Asisten";
 
 class MyApp extends Component {
     render() {
@@ -61,16 +62,16 @@ function AppNavbar() {
                             <NavLink href="/" className="active">Beranda</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#about">Profil</NavLink>
+                            <NavLink href="#Profil">Profil</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#sop">Fasilitas</NavLink>
+                            <NavLink href="#Fasilitas">Fasilitas</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#asisten">Layanan</NavLink>
+                            <NavLink href="#Layanan">Layanan</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#contact">Contact</NavLink>
+                            <NavLink href="#Contact">Contact</NavLink>
                         </NavItem>
                     </Nav>
                     <NavbarText>React Js version : {React.version}</NavbarText>
@@ -100,6 +101,7 @@ class AppMain extends Component {
             <main className="App-main">
                 <Berita/>
                 <SOP/>
+                <Asisten/>
             </main>
         )
     }

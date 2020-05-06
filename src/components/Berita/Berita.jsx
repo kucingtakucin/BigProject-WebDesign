@@ -20,10 +20,12 @@ import './Berita.css';
 class Berita extends Component {
     render() {
         return (
-            <section id="Berita" className="p-3 border-bottom">
+            <section id="Berita" className="p-3">
                 <Container className="themed-container">
                     <Row>
-                        <h1 className="border-bottom font-weight-bold pl-4 pr-4 mb-4">Berita</h1>
+                        <Col md="12">
+                            <h1 className="border-bottom font-weight-bold pl-4 pr-4 mb-4">Berita</h1>
+                        </Col>
                     </Row>
                     <Row>
                         <Col md="7" className="left-post border-right">
@@ -54,7 +56,7 @@ class Berita extends Component {
                             <Card className="mb-2">
                                 <CardBody>
                                     <CardImg top src={rubyrails} alt="Ruby on Rails" className="img-thumbnail"/>
-                                    <CardTitle><h5 className="mt-1">Ruby on Rails : Web Development that's doesn't hurt</h5></CardTitle>
+                                    <CardTitle><h2 className="mt-1">Ruby on Rails : Web Development that's doesn't hurt</h2></CardTitle>
                                     <CardText className="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa explicabo hic iure nihil nulla tempora? Cumque eaque excepturi fugiat ipsam iure, maxime optio placeat provident rerum unde vero voluptas...</CardText>
                                     <CardText>
                                         <small className="text-muted">Last updated 3 mins ago</small>
@@ -65,7 +67,7 @@ class Berita extends Component {
                             <Card className="mb-2">
                                 <CardBody>
                                     <CardImg top src={django} alt="Ruby on Rails" className="img-thumbnail"/>
-                                    <CardTitle><h5 className="mt-1">Django : The Web framework for perfectionists with deadlines</h5></CardTitle>
+                                    <CardTitle><h2 className="mt-1">Django : The Web framework for perfectionists with deadlines</h2></CardTitle>
                                     <CardText className="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa explicabo hic iure nihil nulla tempora? Cumque eaque excepturi fugiat ipsam iure, maxime optio placeat provident rerum unde vero voluptas...</CardText>
                                     <CardText>
                                         <small className="text-muted">Last updated 3 mins ago</small>
@@ -76,7 +78,7 @@ class Berita extends Component {
                             <Card className="mb-2">
                                 <CardBody>
                                     <CardImg top src={laravel} alt="Laravel" className="img-thumbnail"/>
-                                    <CardTitle><h1 className="mt-1">Laravel : The Php Framework for web artisans</h1></CardTitle>
+                                    <CardTitle><h2 className="mt-1">Laravel : The Php Framework for web artisans</h2></CardTitle>
                                     <CardText className="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa explicabo hic iure nihil nulla tempora? Cumque eaque excepturi fugiat ipsam iure, maxime optio placeat provident rerum unde vero voluptas...</CardText>
                                     <CardText>
                                         <small className="text-muted">Last updated 3 mins ago</small>

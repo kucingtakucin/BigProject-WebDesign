@@ -7,16 +7,18 @@ import './SOP.css';
 class SOP extends Component {
     render() {
         return (
-            <section id="SOP" className="p-3 border-bottom">
+            <section id="SOP" className="p-3">
                 <Container className="themed-container">
                     <Row>
-                        <h1 className="border-bottom font-weight-bold pl-4 pr-4 mb-4">Standar Operasional Prosedur</h1>
+                        <Col md="12">
+                            <h1 className="border-bottom font-weight-bold pl-4 pr-4 mb-4">Standar Operasional Prosedur</h1>
+                        </Col>
                     </Row>
                     <Row>
                         <Col md="12">
                             <Media className="border rounded">
                                 <Media left top href="#">
-                                    <img src={cat1} alt="cat1" className="img-thumbnail m-3"/>
+                                    <img src={cat2} alt="cat1" className="img-thumbnail m-3"/>
                                 </Media>
                                 <Media body className="mt-auto mb-auto">
                                     <Media heading>
@@ -28,7 +30,7 @@ class SOP extends Component {
                             </Media>
                             <Media className="mt-2 border rounded">
                                 <Media left middle href="#">
-                                    <img src={cat2} alt="cat2" className="img-thumbnail m-3" />
+                                    <img src={cat1} alt="cat2" className="img-thumbnail m-3" />
                                 </Media>
                                 <Media body className="mt-auto mb-auto">
                                     <Media heading>
