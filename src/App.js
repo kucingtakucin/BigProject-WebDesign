@@ -18,7 +18,7 @@ import {
     Col,
     Collapse,
     Container,
-    Jumbotron,
+    Jumbotron, Media,
     Nav,
     Navbar,
     NavbarBrand,
@@ -354,4 +354,19 @@ PaginationLink.propTypes = {
     last: PropTypes.bool,
     tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
     'aria-label': PropTypes.string
+};
+
+Media.propTypes = {
+    body: PropTypes.bool,
+    bottom: PropTypes.bool,
+    children: PropTypes.node,
+    className: PropTypes.string,
+    heading: PropTypes.bool,
+    left: PropTypes.bool,
+    list: PropTypes.bool,
+    middle: PropTypes.bool,
+    object: PropTypes.bool,
+    right: PropTypes.bool,
+    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+    top: PropTypes.bool,
 };

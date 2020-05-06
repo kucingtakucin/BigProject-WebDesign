@@ -23,7 +23,7 @@ class Berita extends Component {
             <section id="Berita" className="p-3 border-bottom">
                 <Container className="themed-container">
                     <Row>
-                        <h1 className="border-bottom pl-4 pr-4 mb-4">Berita</h1>
+                        <h1 className="border-bottom font-weight-bold pl-4 pr-4 mb-4">Berita</h1>
                     </Row>
                     <Row>
                         <Col md="7" className="left-post border-right">
