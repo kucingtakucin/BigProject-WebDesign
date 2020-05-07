@@ -55,19 +55,17 @@ const CarouselLab = (props) => {
     });
 
     return (
-        <section id="CarouselLab" className="p-3">
-            <Container className="themed-container text-center">
-                <Carousel
-                    activeIndex={activeIndex}
-                    next={next}
-                    previous={previous}
-                >
-                    <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-                    {slides}
-                    <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} className="bg-secondary"/>
-                    <CarouselControl direction="next" directionText="Next" onClickHandler={next} className="bg-secondary" />
-                </Carousel>
-            </Container>
+        <section id="CarouselLab" className="p-3 d-flex text-center flex-row align-items-center justify-content-center">
+            <Carousel
+                activeIndex={activeIndex}
+                next={next}
+                previous={previous}
+            >
+                <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+                {slides}
+                <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous}/>
+                <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+            </Carousel>
         </section>
     );
 }

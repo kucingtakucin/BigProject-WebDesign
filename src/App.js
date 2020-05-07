@@ -18,7 +18,7 @@ import {
     CardSubtitle, CardText, CardTitle, Carousel, CarouselCaption, CarouselControl, CarouselIndicators, CarouselItem,
     Col,
     Collapse,
-    Container,
+    Container, Dropdown, DropdownItem, DropdownMenu, DropdownToggle,
     Jumbotron, Media,
     Nav,
     Navbar,
@@ -27,7 +27,7 @@ import {
     NavbarToggler,
     NavItem,
     NavLink, Pagination, PaginationItem, PaginationLink,
-    Row
+    Row, UncontrolledDropdown
 } from 'reactstrap';
 import './sass/App.css';
 import Berita from "./components/Berita/Berita";
@@ -63,15 +63,60 @@ function AppNavbar() {
                         <NavItem>
                             <NavLink href="/" className="active">Beranda</NavLink>
                         </NavItem>
-                        <NavItem>
-                            <NavLink href="#Profil">Profil</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="#Fasilitas">Fasilitas</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="#Layanan">Layanan</NavLink>
-                        </NavItem>
+                        <UncontrolledDropdown nav inNavbar>
+                            <DropdownToggle nav caret>
+                                Profil
+                            </DropdownToggle>
+                            <DropdownMenu right>
+                                <DropdownItem>
+                                    Visi & Misi
+                                </DropdownItem>
+                                <DropdownItem>
+                                    Sejarah
+                                </DropdownItem>
+                                <DropdownItem>
+                                    Struktur Organisasi
+                                </DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
+                        <UncontrolledDropdown nav inNavbar>
+                            <DropdownToggle nav caret>
+                                Fasilitas
+                            </DropdownToggle>
+                            <DropdownMenu right>
+                                <DropdownItem>
+                                    Lab Data Science
+                                </DropdownItem>
+                                <DropdownItem>
+                                    Lab Mikrokontroller
+                                </DropdownItem>
+                                <DropdownItem>
+                                    Lab Multimedia
+                                </DropdownItem>
+                                <DropdownItem>
+                                    Lab Pemrograman
+                                </DropdownItem>
+                                <DropdownItem>
+                                    Lab RPL
+                                </DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
+                        <UncontrolledDropdown nav inNavbar>
+                            <DropdownToggle nav caret>
+                                Layanan
+                            </DropdownToggle>
+                            <DropdownMenu right>
+                                <DropdownItem>
+                                    Peminjaman Lab
+                                </DropdownItem>
+                                <DropdownItem>
+                                    Peminjaman Alat
+                                </DropdownItem>
+                                <DropdownItem>
+                                    Peminjaman Studio
+                                </DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
                         <NavItem>
                             <NavLink href="#Contact">Contact</NavLink>
                         </NavItem>
@@ -157,6 +202,7 @@ export default class App extends Component {
     }
 }
 
+// Prop-Types
 Navbar.propTypes = {
     light: PropTypes.bool,
     dark: PropTypes.bool,
@@ -463,4 +509,61 @@ CarouselCaption.propTypes = {
     captionHeader: PropTypes.node,
     captionText: PropTypes.node.isRequired,
     cssModule: PropTypes.object
+};
+
+Dropdown.propTypes = {
+    a11y: PropTypes.bool, // defaults to true. Set to false to enable more bootstrap like tabbing behavior
+    disabled: PropTypes.bool,
+    direction: PropTypes.oneOf(['up', 'down', 'left', 'right']),
+    group: PropTypes.bool,
+    isOpen: PropTypes.bool,
+    // For Dropdown usage inside a Nav
+    nav: PropTypes.bool,
+    active: PropTypes.bool,
+    // For Dropdown usage inside a Navbar (disables popper)
+    inNavbar: PropTypes.bool,
+    tag: PropTypes.string, // default: 'div' unless nav=true, then 'li'
+    toggle: PropTypes.func,
+    setActiveFromChild: PropTypes.bool
+};
+
+DropdownToggle.propTypes = {
+    caret: PropTypes.bool,
+    color: PropTypes.string,
+    className: PropTypes.string,
+    disabled: PropTypes.bool,
+    onClick: PropTypes.func,
+    'data-toggle': PropTypes.string,
+    'aria-haspopup': PropTypes.bool,
+    // For DropdownToggle usage inside a Nav
+    nav: PropTypes.bool,
+    // Defaults to Button component
+    tag: PropTypes.any
+};
+
+DropdownMenu.propTypes = {
+    tag: PropTypes.string,
+    children: PropTypes.node.isRequired,
+    right: PropTypes.bool,
+    flip: PropTypes.bool, // default: true,
+    className: PropTypes.string,
+    cssModule: PropTypes.object,
+    // Custom modifiers that are passed to DropdownMenu.js, see https://popper.js.org/popper-documentation.html#modifiers
+    modifiers: PropTypes.object,
+    persist: PropTypes.bool, // presist the popper, even when closed. See #779 for reasoning
+    // passed to popper, see https://popper.js.org/popper-documentation.html#Popper.Defaults.positionFixed
+    positionFixed: PropTypes.bool
+};
+
+DropdownItem.propTypes = {
+    children: PropTypes.node,
+    active: PropTypes.bool,
+    disabled: PropTypes.bool,
+    divider: PropTypes.bool,
+    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+    header: PropTypes.bool,
+    onClick: PropTypes.func,
+    className: PropTypes.string,
+    cssModule: PropTypes.object,
+    toggle: PropTypes.bool // default: true
 };
