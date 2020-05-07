@@ -111,10 +111,35 @@ class AppMain extends Component {
 }
 
 class AppFooter extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            date: new Date()
+        }
+    }
+
+    componentDidMount() {
+        this.now = setInterval(() => this.tick(), 1000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.now);
+    }
+
+    tick(){
+        this.setState({
+            date: new Date()
+        })
+    }
+
     render() {
         return (
-            <footer className="App-footer">
-
+            <footer className="App-footer d-flex flex-column align-items-center justify-content-center">
+                <Row>
+                    <Col md="12">
+                        <p className="text-white m-0">Copyright &copy; {this.state.date.getFullYear()}. Laboratorium Komputasi FMIPA UNS. All Rights Reserved.</p>
+                    </Col>
+                </Row>
             </footer>
         )
     }

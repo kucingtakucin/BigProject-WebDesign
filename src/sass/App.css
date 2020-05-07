@@ -14,5 +14,8 @@
 #my-App .App-header .jumbotron span.labkom {
   color: #61dafb;
 }
+#my-App .App-footer {
+  min-height: 56px;
+}
 
 /*# sourceMappingURL=App.css.map */
