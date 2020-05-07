@@ -181,7 +181,7 @@ class AppFooter extends Component {
         return (
             <footer className="App-footer d-flex flex-column align-items-center justify-content-center">
                 <Row>
-                    <Col md="12">
+                    <Col md="12" className="p-0">
                         <p className="text-white m-0">Copyright &copy; {this.state.date.getFullYear()}. Laboratorium Komputasi FMIPA UNS. All Rights Reserved.</p>
                     </Col>
                 </Row>
