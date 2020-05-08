@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f8b95c59be2b006d620cec713d06c548",
+    "revision": "01cba2957d47681be10a4fce32d4aa00",
     "url": "/BigProject-WebDesign/index.html"
   },
   {
-    "revision": "1d08d13318dc29b52b45",
+    "revision": "fd85e3807f0e145a8873",
     "url": "/BigProject-WebDesign/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "6792968d69d53699e240",
-    "url": "/BigProject-WebDesign/static/css/main.ab3c1346.chunk.css"
+    "revision": "5b50241d168815253524",
+    "url": "/BigProject-WebDesign/static/css/main.397d1e93.chunk.css"
   },
   {
-    "revision": "1d08d13318dc29b52b45",
-    "url": "/BigProject-WebDesign/static/js/2.72afd419.chunk.js"
+    "revision": "fd85e3807f0e145a8873",
+    "url": "/BigProject-WebDesign/static/js/2.19220752.chunk.js"
   },
   {
     "revision": "d2966845b94a3318bf32eecc7af8015d",
-    "url": "/BigProject-WebDesign/static/js/2.72afd419.chunk.js.LICENSE.txt"
+    "url": "/BigProject-WebDesign/static/js/2.19220752.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6792968d69d53699e240",
-    "url": "/BigProject-WebDesign/static/js/main.a3a2a16e.chunk.js"
+    "revision": "5b50241d168815253524",
+    "url": "/BigProject-WebDesign/static/js/main.193d467d.chunk.js"
   },
   {
     "revision": "3ebb08d796980fef9766",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e0f651ac7aecf9187f66e5bd5f181c10",
     "url": "/BigProject-WebDesign/static/media/Sass_Logo_Color.e0f651ac.svg"
+  },
+  {
+    "revision": "db13289f43d46e43e1a2382da0cd5853",
+    "url": "/BigProject-WebDesign/static/media/TugasERDsiakad.db13289f.png"
   },
   {
     "revision": "591b6ff725586e4af1a2dcd4fdf208ef",

@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/BigProject-WebDesign/static/css/main.ab3c1346.chunk.css",
-    "main.js": "/BigProject-WebDesign/static/js/main.a3a2a16e.chunk.js",
-    "main.js.map": "/BigProject-WebDesign/static/js/main.a3a2a16e.chunk.js.map",
+    "main.css": "/BigProject-WebDesign/static/css/main.397d1e93.chunk.css",
+    "main.js": "/BigProject-WebDesign/static/js/main.193d467d.chunk.js",
+    "main.js.map": "/BigProject-WebDesign/static/js/main.193d467d.chunk.js.map",
     "runtime-main.js": "/BigProject-WebDesign/static/js/runtime-main.494d0027.js",
     "runtime-main.js.map": "/BigProject-WebDesign/static/js/runtime-main.494d0027.js.map",
     "static/css/2.de424728.chunk.css": "/BigProject-WebDesign/static/css/2.de424728.chunk.css",
-    "static/js/2.72afd419.chunk.js": "/BigProject-WebDesign/static/js/2.72afd419.chunk.js",
-    "static/js/2.72afd419.chunk.js.map": "/BigProject-WebDesign/static/js/2.72afd419.chunk.js.map",
+    "static/js/2.19220752.chunk.js": "/BigProject-WebDesign/static/js/2.19220752.chunk.js",
+    "static/js/2.19220752.chunk.js.map": "/BigProject-WebDesign/static/js/2.19220752.chunk.js.map",
     "index.html": "/BigProject-WebDesign/index.html",
-    "precache-manifest.b2484ead48a4618089882a4a3b670b33.js": "/BigProject-WebDesign/precache-manifest.b2484ead48a4618089882a4a3b670b33.js",
+    "precache-manifest.067da9adfc6ae329ac3be88dd3d568fa.js": "/BigProject-WebDesign/precache-manifest.067da9adfc6ae329ac3be88dd3d568fa.js",
     "service-worker.js": "/BigProject-WebDesign/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/BigProject-WebDesign/static/css/2.de424728.chunk.css.map",
-    "static/css/main.ab3c1346.chunk.css.map": "/BigProject-WebDesign/static/css/main.ab3c1346.chunk.css.map",
-    "static/js/2.72afd419.chunk.js.LICENSE.txt": "/BigProject-WebDesign/static/js/2.72afd419.chunk.js.LICENSE.txt",
+    "static/css/main.397d1e93.chunk.css.map": "/BigProject-WebDesign/static/css/main.397d1e93.chunk.css.map",
+    "static/js/2.19220752.chunk.js.LICENSE.txt": "/BigProject-WebDesign/static/js/2.19220752.chunk.js.LICENSE.txt",
     "static/media/App.css": "/BigProject-WebDesign/static/media/Cuprum-Regular-webfont.8b055f01.woff",
     "static/media/React-icon.svg": "/BigProject-WebDesign/static/media/React-icon.05a3e30f.svg",
     "static/media/Sass_Logo_Color.svg": "/BigProject-WebDesign/static/media/Sass_Logo_Color.e0f651ac.svg",
+    "static/media/TugasERDsiakad.png": "/BigProject-WebDesign/static/media/TugasERDsiakad.db13289f.png",
     "static/media/django_image.png": "/BigProject-WebDesign/static/media/django_image.591b6ff7.png",
     "static/media/laravel-image.png": "/BigProject-WebDesign/static/media/laravel-image.f482ce8f.png",
     "static/media/logo.svg": "/BigProject-WebDesign/static/media/logo.5d5d9eef.svg",
@@ -25,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.494d0027.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.72afd419.chunk.js",
-    "static/css/main.ab3c1346.chunk.css",
-    "static/js/main.a3a2a16e.chunk.js"
+    "static/js/2.19220752.chunk.js",
+    "static/css/main.397d1e93.chunk.css",
+    "static/js/main.193d467d.chunk.js"
   ]
 }
