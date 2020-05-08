@@ -1,7 +1,7 @@
 import React, {Component, useState} from 'react';
 import PropTypes from 'prop-types';
 import logo from './img/logo.svg';
-import {Route, Switch} from "react-router-dom";
+import {Route, Switch, NavLink as Link} from "react-router-dom";
 import {Transition} from 'react-transition-group';
 import {
     Button,
@@ -25,24 +25,53 @@ import {
     NavbarBrand,
     NavbarText,
     NavbarToggler,
-    NavItem,
-    NavLink, Pagination, PaginationItem, PaginationLink,
+    NavItem, Pagination, PaginationItem, PaginationLink,
     Row, UncontrolledDropdown
 } from 'reactstrap';
 import './sass/App.css';
-import Berita from "./components/Berita/Berita";
-import SOP from "./components/SOP/SOP";
-import Asisten from "./components/Asisten/Asisten";
-import CarouselLab from "./components/CarouselLab/CarouselLab";
+import Berita from "./components/Beranda/Berita/Berita";
+import SOP from "./components/Beranda/SOP/SOP";
+import Asisten from "./components/Beranda/Asisten/Asisten";
+import CarouselLab from "./components/Beranda/CarouselLab/CarouselLab";
+import VisiMisi from "./components/Profil/VisiMisi/VisiMisi";
+import ScrollIntoView from "./components/ScrollIntoView";
+import Sejarah from "./components/Profil/Sejarah/Sejarah";
+import StrukOrg from "./components/Profil/StrukOrg/StrukOrg";
+import PeminjamanLab from "./components/Layanan/PeminjamanLab/PeminjamanLab";
+import PeminjamanAlat from "./components/Layanan/PeminjamanAlat/PeminjamanAlat";
+import PeminjamanStudio from "./components/Layanan/PeminjamanStudio/PeminjamanStudio";
+import LabDataScience from "./components/Fasilitas/LabDataScience/LabDataScience";
+import LabMikrokontroller from "./components/Fasilitas/LabMikrokontroller/LabMikrokontroller";
+import LabMultimedia from "./components/Fasilitas/LabMultimedia/LabMultimedia";
+import LabPemrograman from "./components/Fasilitas/LabPemrograman/LabPemrograman";
+import LabRPL from "./components/Fasilitas/LabRPL/LabRPL";
+import Contact from "./components/Contact/Contact";
 
-class MyApp extends Component {
+class App extends Component {
     render() {
         return (
             <React.Fragment>
-                <AppNavbar/>
-                <AppHeader/>
-                <AppMain/>
-                <AppFooter/>
+                <ScrollIntoView>
+                    <AppHeader>
+                        <AppNavbar/>
+                    </AppHeader>
+                    <Switch>
+                        <Route path="/" component={AppMain} exact/>
+                        <Route path="/Profil/Visi-Misi" component={VisiMisi}/>
+                        <Route path="/Profil/Sejarah" component={Sejarah}/>
+                        <Route path="/Profil/Struktur-Organisasi" component={StrukOrg}/>
+                        <Route path="/Fasilitas/Lab-Data-Science" component={LabDataScience}/>
+                        <Route path="/Fasilitas/Lab-Mikrokontroller" component={LabMikrokontroller}/>
+                        <Route path="/Fasilitas/Lab-Multimedia" component={LabMultimedia}/>
+                        <Route path="/Fasilitas/Lab-Pemrograman" component={LabPemrograman}/>
+                        <Route path="/Fasilitas/Lab-RPL" component={LabRPL}/>
+                        <Route path="/Layanan/Peminjaman-Alat" component={PeminjamanAlat}/>
+                        <Route path="/Layanan/Peminjaman-Lab" component={PeminjamanLab}/>
+                        <Route path="/Layanan/Peminjaman-Studio" component={PeminjamanStudio}/>
+                        <Route path="/Contact" component={Contact}/>
+                    </Switch>
+                    <AppFooter/>
+                </ScrollIntoView>
             </React.Fragment>
         );
     }
@@ -61,7 +90,7 @@ function AppNavbar() {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink href="/" className="active">Beranda</NavLink>
+                            <Link to="/" className="nav-link active">Beranda</Link>
                         </NavItem>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
@@ -69,13 +98,13 @@ function AppNavbar() {
                             </DropdownToggle>
                             <DropdownMenu right>
                                 <DropdownItem>
-                                    Visi & Misi
+                                    <Link to="/Profil/Visi-Misi">Visi & Misi</Link>
                                 </DropdownItem>
                                 <DropdownItem>
-                                    Sejarah
+                                    <Link to="/Profil/Sejarah">Sejarah</Link>
                                 </DropdownItem>
                                 <DropdownItem>
-                                    Struktur Organisasi
+                                    <Link to="/Profil/Struktur-Organisasi">Struktur Organisasi</Link>
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
@@ -85,19 +114,19 @@ function AppNavbar() {
                             </DropdownToggle>
                             <DropdownMenu right>
                                 <DropdownItem>
-                                    Lab Data Science
+                                    <Link to="/Fasilitas/Lab-Data-Science">Lab Data Science</Link>
                                 </DropdownItem>
                                 <DropdownItem>
-                                    Lab Mikrokontroller
+                                    <Link to="/Fasilitas/Lab-Mikrokontroller">Lab Mikrokontroller</Link>
                                 </DropdownItem>
                                 <DropdownItem>
-                                    Lab Multimedia
+                                    <Link to="/Fasilitas/Lab-Multimedia">Lab Multimedia</Link>
                                 </DropdownItem>
                                 <DropdownItem>
-                                    Lab Pemrograman
+                                    <Link to="/Fasilitas/Lab-Pemrograman">Lab Pemrograman</Link>
                                 </DropdownItem>
                                 <DropdownItem>
-                                    Lab RPL
+                                    <Link to="/Fasilitas/Lab-RPL">Lab RPL</Link>
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
@@ -107,18 +136,18 @@ function AppNavbar() {
                             </DropdownToggle>
                             <DropdownMenu right>
                                 <DropdownItem>
-                                    Peminjaman Lab
+                                    <Link to="/Layanan/Peminjaman-Alat">Peminjaman Alat</Link>
                                 </DropdownItem>
                                 <DropdownItem>
-                                    Peminjaman Alat
+                                    <Link to="/Layanan/Peminjaman-Lab">Peminjaman Lab</Link>
                                 </DropdownItem>
                                 <DropdownItem>
-                                    Peminjaman Studio
+                                    <Link to="/Layanan/Peminjaman-Studio">Peminjaman Studio</Link>
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
                         <NavItem>
-                            <NavLink href="#Contact">Contact</NavLink>
+                            <Link to="/Contact" className="nav-link">Contact</Link>
                         </NavItem>
                     </Nav>
                     <NavbarText>React Js version : {React.version}</NavbarText>
@@ -133,6 +162,7 @@ class AppHeader extends Component {
     render() {
         return (
             <header className="App-header">
+                {this.props.children}
                 <Jumbotron className="d-flex flex-column align-items-center justify-content-center m-0">
                     <h1 className="display-3 font-weight-bold text-light mt-4 mb-0">Laboratorium <span className="labkom">Komputasi</span> FMIPA</h1>
                     <h1 className="display-4 text-light m-0">Universitas Sebelas Maret</h1>
@@ -190,17 +220,7 @@ class AppFooter extends Component {
     }
 }
 
-export default class App extends Component {
-    render() {
-        return (
-            <React.Fragment>
-                <Switch>
-                    <Route path="/" component={MyApp} exact={true}/>
-                </Switch>
-            </React.Fragment>
-        )
-    }
-}
+export default App;
 
 // Prop-Types
 Navbar.propTypes = {
