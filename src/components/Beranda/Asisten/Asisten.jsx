@@ -35,7 +35,7 @@ class Asisten extends Component {
                                     <CardImg top src={cat2} alt="Ruby on Rails" className="img-thumbnail"/>
                                     <CardTitle><h3 className="mt-1">Ruby on Rails</h3></CardTitle>
                                     <CardText className="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, magnam.</CardText>
-                                    <Button color="secondary">Selengkapnya ...</Button>
+                                    <Button color="secondary">Koordinator</Button>
                                 </CardBody>
                             </Card>
                         </Col>
@@ -45,7 +45,7 @@ class Asisten extends Component {
                                     <CardImg top src={cat1} alt="Ruby on Rails" className="img-thumbnail"/>
                                     <CardTitle><h3 className="mt-1">Django</h3></CardTitle>
                                     <CardText className="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, reiciendis.</CardText>
-                                    <Button color="secondary">Selengkapnya ...</Button>
+                                    <Button color="secondary">Sekretaris</Button>
                                 </CardBody>
                             </Card>
                         </Col>
@@ -55,7 +55,7 @@ class Asisten extends Component {
                                     <CardImg top src={cat2} alt="Laravel" className="img-thumbnail"/>
                                     <CardTitle><h3 className="mt-1">Laravel</h3></CardTitle>
                                     <CardText className="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, et?</CardText>
-                                    <Button color="secondary">Selengkapnya ...</Button>
+                                    <Button color="secondary">Bendahara</Button>
                                 </CardBody>
                             </Card>
                         </Col>

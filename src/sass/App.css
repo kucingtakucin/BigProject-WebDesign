@@ -74,7 +74,7 @@
   .App-main section#SOP p {
     font-size: 15px;
   }
-  .App-main section#SOP button {
+  .App-main section#SOP a.btn {
     font-size: 15px;
   }
   .App-main section#SOP img {
@@ -116,7 +116,7 @@
   .App-main section#SOP p {
     font-size: 12px;
   }
-  .App-main section#SOP button {
+  .App-main section#SOP a.btn {
     font-size: 10px;
   }
   .App-main section#SOP img {
@@ -158,7 +158,7 @@
   .App-main section#SOP p {
     font-size: 12px;
   }
-  .App-main section#SOP button {
+  .App-main section#SOP a.btn {
     font-size: 10px;
   }
   .App-main section#SOP img {

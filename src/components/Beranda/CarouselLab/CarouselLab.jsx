@@ -48,7 +48,7 @@ const CarouselLab = (props) => {
                 onExited={() => setAnimating(false)}
                 key={item.src}
             >
-                <img src={item.src} alt={item.altText} className="img-thumbnail"/>
+                <img src={item.src} alt={item.altText} className="img-fluid"/>
                 <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
             </CarouselItem>
         );

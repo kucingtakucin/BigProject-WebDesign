@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Button, Col, Container, Media, Row} from "reactstrap";
+import {Col, Container, Media, Row} from "reactstrap";
+import {NavLink as Link} from 'react-router-dom';
 import cat1 from './img/p_cat1.png';
 import cat2 from './img/p_cat2.png';
 import './SOP.css';
@@ -22,10 +23,10 @@ class SOP extends Component {
                                 </Media>
                                 <Media body className="mt-auto mb-auto">
                                     <Media heading>
-                                        SOP Peminjaman Lab
+                                        SOP Peminjaman Ruang
                                     </Media>
                                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ...</p>
-                                    <Button color="info">Selengkapnya ...</Button>
+                                    <Link to="/Layanan/Peminjaman-Ruang" className="btn btn-info">Selengkapnya ...</Link>
                                 </Media>
                             </Media>
                             <Media className="mt-2 border rounded">
@@ -37,7 +38,7 @@ class SOP extends Component {
                                         SOP Peminjaman Alat
                                     </Media>
                                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ...</p>
-                                    <Button color="info">Selengkapnya ...</Button>
+                                    <Link to="/Layanan/Peminjaman-Alat" className="btn btn-info">Selengkapnya ...</Link>
                                 </Media>
                             </Media>
                             <Media className="mt-2 border rounded">
@@ -49,7 +50,7 @@ class SOP extends Component {
                                         SOP Peminjaman Studio
                                     </Media>
                                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ...</p>
-                                    <Button color="info">Selengkapnya ...</Button>
+                                    <Link to="/Layanan/Peminjaman-Studio" className="btn btn-info">Selengkapnya ...</Link>
                                 </Media>
                             </Media>
                         </Col>

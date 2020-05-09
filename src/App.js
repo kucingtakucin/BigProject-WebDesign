@@ -4,6 +4,7 @@ import logo from './img/logo.svg';
 import {Route, Switch, NavLink as Link} from "react-router-dom";
 import {Transition} from 'react-transition-group';
 import {
+    Breadcrumb, BreadcrumbItem,
     Button,
     Card,
     CardBody,
@@ -37,7 +38,7 @@ import VisiMisi from "./components/Profil/VisiMisi/VisiMisi";
 import ScrollIntoView from "./components/ScrollIntoView";
 import Sejarah from "./components/Profil/Sejarah/Sejarah";
 import StrukOrg from "./components/Profil/StrukOrg/StrukOrg";
-import PeminjamanLab from "./components/Layanan/PeminjamanLab/PeminjamanLab";
+import PeminjamanRuang from "./components/Layanan/PeminjamanRuang/PeminjamanRuang";
 import PeminjamanAlat from "./components/Layanan/PeminjamanAlat/PeminjamanAlat";
 import PeminjamanStudio from "./components/Layanan/PeminjamanStudio/PeminjamanStudio";
 import LabDataScience from "./components/Fasilitas/LabDataScience/LabDataScience";
@@ -66,7 +67,7 @@ class App extends Component {
                         <Route path="/Fasilitas/Lab-Pemrograman" component={LabPemrograman}/>
                         <Route path="/Fasilitas/Lab-RPL" component={LabRPL}/>
                         <Route path="/Layanan/Peminjaman-Alat" component={PeminjamanAlat}/>
-                        <Route path="/Layanan/Peminjaman-Lab" component={PeminjamanLab}/>
+                        <Route path="/Layanan/Peminjaman-Ruang" component={PeminjamanRuang}/>
                         <Route path="/Layanan/Peminjaman-Studio" component={PeminjamanStudio}/>
                         <Route path="/Contact" component={Contact}/>
                     </Switch>
@@ -97,13 +98,13 @@ function AppNavbar() {
                                 Profil
                             </DropdownToggle>
                             <DropdownMenu right>
-                                <DropdownItem>
+                                <DropdownItem className="d-flex flex-column text-center pr-0 pl-0">
                                     <Link to="/Profil/Visi-Misi">Visi & Misi</Link>
                                 </DropdownItem>
-                                <DropdownItem>
+                                <DropdownItem className="d-flex flex-column text-center pr-0 pl-0">
                                     <Link to="/Profil/Sejarah">Sejarah</Link>
                                 </DropdownItem>
-                                <DropdownItem>
+                                <DropdownItem className="d-flex flex-column text-center pr-0 pl-0">
                                     <Link to="/Profil/Struktur-Organisasi">Struktur Organisasi</Link>
                                 </DropdownItem>
                             </DropdownMenu>
@@ -113,19 +114,19 @@ function AppNavbar() {
                                 Fasilitas
                             </DropdownToggle>
                             <DropdownMenu right>
-                                <DropdownItem>
+                                <DropdownItem className="d-flex flex-column text-center pr-0 pl-0">
                                     <Link to="/Fasilitas/Lab-Data-Science">Lab Data Science</Link>
                                 </DropdownItem>
-                                <DropdownItem>
+                                <DropdownItem className="d-flex flex-column text-center pr-0 pl-0">
                                     <Link to="/Fasilitas/Lab-Mikrokontroller">Lab Mikrokontroller</Link>
                                 </DropdownItem>
-                                <DropdownItem>
+                                <DropdownItem className="d-flex flex-column text-center pr-0 pl-0">
                                     <Link to="/Fasilitas/Lab-Multimedia">Lab Multimedia</Link>
                                 </DropdownItem>
-                                <DropdownItem>
+                                <DropdownItem className="d-flex flex-column text-center pr-0 pl-0">
                                     <Link to="/Fasilitas/Lab-Pemrograman">Lab Pemrograman</Link>
                                 </DropdownItem>
-                                <DropdownItem>
+                                <DropdownItem className="d-flex flex-column text-center pr-0 pl-0">
                                     <Link to="/Fasilitas/Lab-RPL">Lab RPL</Link>
                                 </DropdownItem>
                             </DropdownMenu>
@@ -135,13 +136,13 @@ function AppNavbar() {
                                 Layanan
                             </DropdownToggle>
                             <DropdownMenu right>
-                                <DropdownItem>
+                                <DropdownItem className="d-flex flex-column text-center pr-0 pl-0">
                                     <Link to="/Layanan/Peminjaman-Alat">Peminjaman Alat</Link>
                                 </DropdownItem>
-                                <DropdownItem>
-                                    <Link to="/Layanan/Peminjaman-Lab">Peminjaman Lab</Link>
+                                <DropdownItem className="d-flex flex-column text-center pr-0 pl-0">
+                                    <Link to="/Layanan/Peminjaman-Ruang">Peminjaman Ruang</Link>
                                 </DropdownItem>
-                                <DropdownItem>
+                                <DropdownItem className="d-flex flex-column text-center pr-0 pl-0">
                                     <Link to="/Layanan/Peminjaman-Studio">Peminjaman Studio</Link>
                                 </DropdownItem>
                             </DropdownMenu>
@@ -586,4 +587,21 @@ DropdownItem.propTypes = {
     className: PropTypes.string,
     cssModule: PropTypes.object,
     toggle: PropTypes.bool // default: true
+};
+
+Breadcrumb.propTypes = {
+    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+    listTag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+    className: PropTypes.string,
+    listClassName: PropTypes.string,
+    cssModule: PropTypes.object,
+    children: PropTypes.node,
+    'aria-label': PropTypes.string
+};
+
+BreadcrumbItem.propTypes = {
+    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+    active: PropTypes.bool,
+    className: PropTypes.string,
+    cssModule: PropTypes.object,
 };
