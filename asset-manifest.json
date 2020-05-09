@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/BigProject-WebDesign/static/css/main.397d1e93.chunk.css",
-    "main.js": "/BigProject-WebDesign/static/js/main.193d467d.chunk.js",
-    "main.js.map": "/BigProject-WebDesign/static/js/main.193d467d.chunk.js.map",
+    "main.css": "/BigProject-WebDesign/static/css/main.0415faf2.chunk.css",
+    "main.js": "/BigProject-WebDesign/static/js/main.01a331fb.chunk.js",
+    "main.js.map": "/BigProject-WebDesign/static/js/main.01a331fb.chunk.js.map",
     "runtime-main.js": "/BigProject-WebDesign/static/js/runtime-main.494d0027.js",
     "runtime-main.js.map": "/BigProject-WebDesign/static/js/runtime-main.494d0027.js.map",
     "static/css/2.de424728.chunk.css": "/BigProject-WebDesign/static/css/2.de424728.chunk.css",
-    "static/js/2.19220752.chunk.js": "/BigProject-WebDesign/static/js/2.19220752.chunk.js",
-    "static/js/2.19220752.chunk.js.map": "/BigProject-WebDesign/static/js/2.19220752.chunk.js.map",
+    "static/js/2.c4b9d6b2.chunk.js": "/BigProject-WebDesign/static/js/2.c4b9d6b2.chunk.js",
+    "static/js/2.c4b9d6b2.chunk.js.map": "/BigProject-WebDesign/static/js/2.c4b9d6b2.chunk.js.map",
     "index.html": "/BigProject-WebDesign/index.html",
-    "precache-manifest.067da9adfc6ae329ac3be88dd3d568fa.js": "/BigProject-WebDesign/precache-manifest.067da9adfc6ae329ac3be88dd3d568fa.js",
+    "precache-manifest.a57d96a20990c4e16d8ad5c5ba96fd73.js": "/BigProject-WebDesign/precache-manifest.a57d96a20990c4e16d8ad5c5ba96fd73.js",
     "service-worker.js": "/BigProject-WebDesign/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/BigProject-WebDesign/static/css/2.de424728.chunk.css.map",
-    "static/css/main.397d1e93.chunk.css.map": "/BigProject-WebDesign/static/css/main.397d1e93.chunk.css.map",
-    "static/js/2.19220752.chunk.js.LICENSE.txt": "/BigProject-WebDesign/static/js/2.19220752.chunk.js.LICENSE.txt",
+    "static/css/main.0415faf2.chunk.css.map": "/BigProject-WebDesign/static/css/main.0415faf2.chunk.css.map",
+    "static/js/2.c4b9d6b2.chunk.js.LICENSE.txt": "/BigProject-WebDesign/static/js/2.c4b9d6b2.chunk.js.LICENSE.txt",
     "static/media/App.css": "/BigProject-WebDesign/static/media/Cuprum-Regular-webfont.8b055f01.woff",
     "static/media/React-icon.svg": "/BigProject-WebDesign/static/media/React-icon.05a3e30f.svg",
     "static/media/Sass_Logo_Color.svg": "/BigProject-WebDesign/static/media/Sass_Logo_Color.e0f651ac.svg",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.494d0027.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.19220752.chunk.js",
-    "static/css/main.397d1e93.chunk.css",
-    "static/js/main.193d467d.chunk.js"
+    "static/js/2.c4b9d6b2.chunk.js",
+    "static/css/main.0415faf2.chunk.css",
+    "static/js/main.01a331fb.chunk.js"
   ]
 }

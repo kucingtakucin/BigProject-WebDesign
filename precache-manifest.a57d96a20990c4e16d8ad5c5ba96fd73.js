@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "01cba2957d47681be10a4fce32d4aa00",
+    "revision": "5cc80ac5d93e8f1849d7c154b99df975",
     "url": "/BigProject-WebDesign/index.html"
   },
   {
-    "revision": "fd85e3807f0e145a8873",
+    "revision": "8c36fe951ff083eafa9f",
     "url": "/BigProject-WebDesign/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "5b50241d168815253524",
-    "url": "/BigProject-WebDesign/static/css/main.397d1e93.chunk.css"
+    "revision": "97cf434f6c6ecbf30ab1",
+    "url": "/BigProject-WebDesign/static/css/main.0415faf2.chunk.css"
   },
   {
-    "revision": "fd85e3807f0e145a8873",
-    "url": "/BigProject-WebDesign/static/js/2.19220752.chunk.js"
+    "revision": "8c36fe951ff083eafa9f",
+    "url": "/BigProject-WebDesign/static/js/2.c4b9d6b2.chunk.js"
   },
   {
     "revision": "d2966845b94a3318bf32eecc7af8015d",
-    "url": "/BigProject-WebDesign/static/js/2.19220752.chunk.js.LICENSE.txt"
+    "url": "/BigProject-WebDesign/static/js/2.c4b9d6b2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5b50241d168815253524",
-    "url": "/BigProject-WebDesign/static/js/main.193d467d.chunk.js"
+    "revision": "97cf434f6c6ecbf30ab1",
+    "url": "/BigProject-WebDesign/static/js/main.01a331fb.chunk.js"
   },
   {
     "revision": "3ebb08d796980fef9766",
