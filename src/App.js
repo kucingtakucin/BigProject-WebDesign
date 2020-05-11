@@ -52,10 +52,10 @@ class App extends Component {
     render() {
         return (
             <React.Fragment>
+                <AppHeader>
+                    <AppNavbar/>
+                </AppHeader>
                 <ScrollIntoView>
-                    <AppHeader>
-                        <AppNavbar/>
-                    </AppHeader>
                     <Switch>
                         <Route path="/" component={AppMain} exact/>
                         <Route path="/Profil/Visi-Misi" component={VisiMisi}/>
@@ -71,8 +71,8 @@ class App extends Component {
                         <Route path="/Layanan/Peminjaman-Studio" component={PeminjamanStudio}/>
                         <Route path="/Contact" component={Contact}/>
                     </Switch>
-                    <AppFooter/>
                 </ScrollIntoView>
+                <AppFooter/>
             </React.Fragment>
         );
     }

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Breadcrumb, BreadcrumbItem, Col, Container, Row} from "reactstrap";
+import {Breadcrumb, BreadcrumbItem, Col, Container, Form, FormGroup, Input, Label, Row} from "reactstrap";
 import './Contact.css';
 import {NavLink as Link} from "react-router-dom";
 import AppAside from "../AppAside";
@@ -19,6 +19,27 @@ class Contact extends Component {
                                 <Row>
                                     <Col md="12">
                                         <h1 className="border-bottom font-weight-bold pl-4 pr-4 mb-4">Contact</h1>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col md="12">
+                                        <Form method="post">
+                                            <FormGroup>
+                                                <Label for="username">Username</Label>
+                                                <Input type="text" id="username" required maxLength="25"/>
+                                            </FormGroup>
+                                            <FormGroup>
+                                                <Label for="email">Email</Label>
+                                                <Input type="email" id="email" required maxLength="25"/>
+                                            </FormGroup>
+                                            <FormGroup>
+                                                <Label for="text">Pesan</Label>
+                                                <Input type="textarea" id="text" rows="10"/>
+                                            </FormGroup>
+                                            <FormGroup>
+                                                <Input type="submit" value="Kirim" className="btn btn-outline-info"/>
+                                            </FormGroup>
+                                        </Form>
                                     </Col>
                                 </Row>
                             </Col>
