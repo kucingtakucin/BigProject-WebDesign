@@ -1,11 +1,31 @@
 import React, {Component} from 'react';
 import {Col, Container, Media, Row} from "reactstrap";
 import {NavLink as Link} from 'react-router-dom';
-import cat1 from './img/p_cat1.png';
-import cat2 from './img/p_cat2.png';
 import './SOP.css';
 
 class SOP extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            ruang: null,
+            alat: null,
+            studio: null
+        }
+    }
+
+    componentDidMount() {
+        fetch(`https://picsum.photos/v2/list?page=${Math.floor(Math.random() * 5 + 1)}&limit=100`)
+            .then(response => response.json())
+            .then(results => {
+                this.setState({
+                    ruang: results[Math.floor(Math.random() * 100 + 1)].download_url,
+                    alat: results[Math.floor(Math.random() * 100 + 1)].download_url,
+                    studio: results[Math.floor(Math.random() * 100 + 1)].download_url,
+                })
+            })
+            .catch (errors => console.log('Error:', errors));
+    }
+    
     render() {
         return (
             <section id="SOP" className="p-3">
@@ -19,7 +39,7 @@ class SOP extends Component {
                         <Col md="12">
                             <Media className="border rounded">
                                 <Media left top href="#">
-                                    <img src={cat2} alt="cat1" className="img-thumbnail m-3"/>
+                                    <img src={this.state.ruang} alt="cat1" width="200px" className="img-fluid m-3"/>
                                 </Media>
                                 <Media body className="mt-auto mb-auto">
                                     <Media heading>
@@ -31,7 +51,7 @@ class SOP extends Component {
                             </Media>
                             <Media className="mt-2 border rounded">
                                 <Media left middle href="#">
-                                    <img src={cat1} alt="cat2" className="img-thumbnail m-3" />
+                                    <img src={this.state.alat} alt="cat2" width="200px" className="img-fluid m-3" />
                                 </Media>
                                 <Media body className="mt-auto mb-auto">
                                     <Media heading>
@@ -43,7 +63,7 @@ class SOP extends Component {
                             </Media>
                             <Media className="mt-2 border rounded">
                                 <Media left bottom href="#">
-                                    <img src={cat2} alt="cat3" className="img-thumbnail m-3" />
+                                    <img src={this.state.studio} alt="cat3" width="200px" className="img-fluid m-3" />
                                 </Media>
                                 <Media body className="mt-auto mb-auto">
                                     <Media heading>

@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, {Component, Suspense, useState} from 'react';
 import PropTypes from 'prop-types';
 import logo from './img/logo.svg';
 import {Route, Switch, NavLink as Link} from "react-router-dom";
@@ -27,26 +27,27 @@ import {
     NavbarText,
     NavbarToggler,
     NavItem, Pagination, PaginationItem, PaginationLink,
-    Row, UncontrolledDropdown
+    Row, Spinner, UncontrolledDropdown
 } from 'reactstrap';
-import './sass/App.css';
-import Berita from "./components/Beranda/Berita/Berita";
-import SOP from "./components/Beranda/SOP/SOP";
-import Asisten from "./components/Beranda/Asisten/Asisten";
-import CarouselLab from "./components/Beranda/CarouselLab/CarouselLab";
-import VisiMisi from "./components/Profil/VisiMisi/VisiMisi";
 import ScrollIntoView from "./components/ScrollIntoView";
-import Sejarah from "./components/Profil/Sejarah/Sejarah";
-import StrukOrg from "./components/Profil/StrukOrg/StrukOrg";
-import PeminjamanRuang from "./components/Layanan/PeminjamanRuang/PeminjamanRuang";
-import PeminjamanAlat from "./components/Layanan/PeminjamanAlat/PeminjamanAlat";
-import PeminjamanStudio from "./components/Layanan/PeminjamanStudio/PeminjamanStudio";
-import LabDataScience from "./components/Fasilitas/LabDataScience/LabDataScience";
-import LabMikrokontroller from "./components/Fasilitas/LabMikrokontroller/LabMikrokontroller";
-import LabMultimedia from "./components/Fasilitas/LabMultimedia/LabMultimedia";
-import LabPemrograman from "./components/Fasilitas/LabPemrograman/LabPemrograman";
-import LabRPL from "./components/Fasilitas/LabRPL/LabRPL";
-import Contact from "./components/Contact/Contact";
+import './sass/App.css';
+
+const Berita = React.lazy(() => import("./components/Beranda/Berita/Berita"));
+const SOP = React.lazy(() => import("./components/Beranda/SOP/SOP"));
+const Asisten = React.lazy(() => import("./components/Beranda/Asisten/Asisten"));
+const CarouselLab = React.lazy(() => import("./components/Beranda/CarouselLab/CarouselLab"));
+const VisiMisi = React.lazy(() => import("./components/Profil/VisiMisi/VisiMisi"));
+const Sejarah = React.lazy(() => import("./components/Profil/Sejarah/Sejarah"));
+const StrukOrg = React.lazy(() => import("./components/Profil/StrukOrg/StrukOrg"));
+const PeminjamanRuang = React.lazy(() => import("./components/Layanan/PeminjamanRuang/PeminjamanRuang"));
+const PeminjamanAlat = React.lazy(() => import("./components/Layanan/PeminjamanAlat/PeminjamanAlat"));
+const PeminjamanStudio = React.lazy(() => import ("./components/Layanan/PeminjamanStudio/PeminjamanStudio"));
+const LabDataScience = React.lazy(() => import("./components/Fasilitas/LabDataScience/LabDataScience"));
+const LabMikrokontroller = React.lazy(() => import("./components/Fasilitas/LabMikrokontroller/LabMikrokontroller"));
+const LabMultimedia = React.lazy(() => import("./components/Fasilitas/LabMultimedia/LabMultimedia"));
+const LabPemrograman = React.lazy(() => import("./components/Fasilitas/LabPemrograman/LabPemrograman"));
+const LabRPL = React.lazy(() => import("./components/Fasilitas/LabRPL/LabRPL"));
+const Contact = React.lazy(() => import("./components/Contact/Contact"));
 
 class App extends Component {
     render() {
@@ -56,21 +57,27 @@ class App extends Component {
                     <AppNavbar/>
                 </AppHeader>
                 <ScrollIntoView>
-                    <Switch>
-                        <Route path="/" component={AppMain} exact/>
-                        <Route path="/Profil/Visi-Misi" component={VisiMisi}/>
-                        <Route path="/Profil/Sejarah" component={Sejarah}/>
-                        <Route path="/Profil/Struktur-Organisasi" component={StrukOrg}/>
-                        <Route path="/Fasilitas/Lab-Data-Science" component={LabDataScience}/>
-                        <Route path="/Fasilitas/Lab-Mikrokontroller" component={LabMikrokontroller}/>
-                        <Route path="/Fasilitas/Lab-Multimedia" component={LabMultimedia}/>
-                        <Route path="/Fasilitas/Lab-Pemrograman" component={LabPemrograman}/>
-                        <Route path="/Fasilitas/Lab-RPL" component={LabRPL}/>
-                        <Route path="/Layanan/Peminjaman-Alat" component={PeminjamanAlat}/>
-                        <Route path="/Layanan/Peminjaman-Ruang" component={PeminjamanRuang}/>
-                        <Route path="/Layanan/Peminjaman-Studio" component={PeminjamanStudio}/>
-                        <Route path="/Contact" component={Contact}/>
-                    </Switch>
+                    <Suspense fallback={
+                        <div className="text-center p-5 bg-white">
+                            <Spinner className="mt-5 mb-5" type="grow" style={{ width: '3rem', height: '3rem' }} color="info"/>
+                        </div>
+                    }>
+                        <Switch>
+                            <Route path="/" component={AppMain} exact/>
+                            <Route path="/Profil/Visi-Misi" component={VisiMisi}/>
+                            <Route path="/Profil/Sejarah" component={Sejarah}/>
+                            <Route path="/Profil/Struktur-Organisasi" component={StrukOrg}/>
+                            <Route path="/Fasilitas/Lab-Data-Science" component={LabDataScience}/>
+                            <Route path="/Fasilitas/Lab-Mikrokontroller" component={LabMikrokontroller}/>
+                            <Route path="/Fasilitas/Lab-Multimedia" component={LabMultimedia}/>
+                            <Route path="/Fasilitas/Lab-Pemrograman" component={LabPemrograman}/>
+                            <Route path="/Fasilitas/Lab-RPL" component={LabRPL}/>
+                            <Route path="/Layanan/Peminjaman-Alat" component={PeminjamanAlat}/>
+                            <Route path="/Layanan/Peminjaman-Ruang" component={PeminjamanRuang}/>
+                            <Route path="/Layanan/Peminjaman-Studio" component={PeminjamanStudio}/>
+                            <Route path="/Contact" component={Contact}/>
+                        </Switch>
+                    </Suspense>
                 </ScrollIntoView>
                 <AppFooter/>
             </React.Fragment>

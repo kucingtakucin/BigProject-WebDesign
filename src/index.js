@@ -4,11 +4,14 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {ParallaxProvider} from "react-scroll-parallax";
 
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <App />
+            <ParallaxProvider>
+                <App />
+            </ParallaxProvider>
         </BrowserRouter>
     </React.StrictMode>,
   document.getElementById('my-App')
