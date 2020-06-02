@@ -21,7 +21,7 @@ class LabPemrograman extends Component {
                     <section id="LabPemrograman" className="p-3">
                         <Container className="themed-container">
                             <Breadcrumb>
-                                <BreadcrumbItem><Link to="/"><a>Beranda</a></Link></BreadcrumbItem>
+                                <BreadcrumbItem><Link href="/"><a>Beranda</a></Link></BreadcrumbItem>
                                 <BreadcrumbItem active>Fasilitas</BreadcrumbItem>
                                 <BreadcrumbItem active>Lab Pemrograman</BreadcrumbItem>
                             </Breadcrumb>
