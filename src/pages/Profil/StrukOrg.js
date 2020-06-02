@@ -34,7 +34,7 @@ class StrukOrg extends Component {
                                     </Row>
                                     <Row>
                                         <Col md="12" className="d-flex align-items-center justify-content-center">
-                                            <img src={erd} alt="ERD" className="img-thumbnail"/>
+                                            <img src='/img/TugasERDsiakad.png' alt="ERD" className="img-thumbnail"/>
                                         </Col>
                                     </Row>
                                 </Col>
