@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Breadcrumb, BreadcrumbItem, Col, Container, Row} from "reactstrap"
 import AppAside from "../../components/AppAside"
-import {Link} from "next";
+import Link from "next/link";
 import Head from "next/head";
 import {AppFooter, AppHeader, AppNavbar} from "../index";
 
