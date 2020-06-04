@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2020. Adam Arthur Faizal. All Rights Reserved
+ */
+
 import React, {Component, useState} from 'react'
 import Head from "next/head";
 import Link from "next/link";

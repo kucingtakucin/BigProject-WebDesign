@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2020. Adam Arthur Faizal. All Rights Reserved
+ */
+
 import React, {Component} from 'react';
 import {Breadcrumb, BreadcrumbItem, Col, Container, Form, FormGroup, Input, Label, Row} from "reactstrap";
 import AppAside from "../components/AppAside";

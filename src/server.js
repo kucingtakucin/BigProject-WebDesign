@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2020. Adam Arthur Faizal. All Rights Reserved
+ */
+
 const express = require('express')
 const next = require('next')
 const bodyParser = require('body-parser')

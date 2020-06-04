@@ -1,5 +1,10 @@
+/*
+ * Copyright (c) 2020. Adam Arthur Faizal. All Rights Reserved
+ */
+
 import React, {Component} from 'react';
 import {Col, Media, Row} from "reactstrap";
+import Link from "next/link";
 
 class AppAside extends Component {
     constructor(props) {
@@ -32,7 +37,11 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                        <a>
+                                            <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                        </a>
+                                    </Link>
                                 </Media>
                             </Media>
                         </Media>
@@ -42,7 +51,11 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                        <a>
+                                            <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                        </a>
+                                    </Link>
                                 </Media>
                             </Media>
                         </Media>
@@ -52,7 +65,11 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                        <a>
+                                            <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                        </a>
+                                    </Link>
                                 </Media>
                             </Media>
                         </Media>
@@ -62,7 +79,11 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                        <a>
+                                            <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                        </a>
+                                    </Link>
                                 </Media>
                             </Media>
                         </Media>
@@ -81,7 +102,11 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                        <a>
+                                            <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                        </a>
+                                    </Link>
                                 </Media>
                             </Media>
                         </Media>
@@ -91,7 +116,11 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                        <a>
+                                            <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                        </a>
+                                    </Link>
                                 </Media>
                             </Media>
                         </Media>
@@ -101,7 +130,11 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                        <a>
+                                            <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                        </a>
+                                    </Link>
                                 </Media>
                             </Media>
                         </Media>
@@ -111,7 +144,11 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                        <a>
+                                            <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
+                                        </a>
+                                    </Link>
                                 </Media>
                             </Media>
                         </Media>

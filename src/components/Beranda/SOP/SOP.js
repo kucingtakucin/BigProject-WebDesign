@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2020. Adam Arthur Faizal. All Rights Reserved
+ */
+
 import React, {Component} from 'react';
 import {Col, Container, Media, Row} from "reactstrap";
 import Link from "next/link";
