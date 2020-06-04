@@ -25,7 +25,7 @@
         "build": "next build",
         "start": "cross-env NODE_ENV=production node src/server.js",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d .next"
     },
     "eslintConfig": {
         "extends": "react-app"
