@@ -1,5 +1,7 @@
 /*
- * Copyright (c) 2020. Adam Arthur Faizal. All Rights Reserved
+ * Copyright (c) 2020. All Rights Reserved
+ * @author (Adam Arthur Faizal)
+ * @version (6 Juni 2020)
  */
 
 const express = require('express')
@@ -18,10 +20,10 @@ app.prepare().then(() => {
     server.use(bodyParser.json())
     server.use(cors())
 
-    server.use(function(req, res, next) {
-        res.header('Access-Control-Allow-Origin', '*'); //replace localhost with actual host
-        res.header('Access-Control-Allow-Methods', 'OPTIONS, GET, PUT, PATCH, POST, DELETE');
-        res.header('Access-Control-Allow-Headers', 'Content-Type, X-Requested-With, Authorization');
+    server.use((req, res, next) => {
+        res.header('Access-Control-Allow-Origin', '*')
+        res.header('Access-Control-Allow-Methods', 'OPTIONS, GET, PUT, PATCH, POST, DELETE')
+        res.header('Access-Control-Allow-Headers', 'Content-Type, X-Requested-With, Authorization')
         next();
     })
 

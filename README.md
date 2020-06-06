@@ -17,21 +17,23 @@
 
 ## Getting Started
 
-Visit <a aria-label="next.js learn" href="https://nextjs.org/learn">https://nextjs.org/learn</a> to get started with Next.js.
+Visit [https://nextjs.org/learn](https://nextjs.org/learn) to get started with Next.js.
+<ol>
+ <li>Download <b>Node.Js</b> di <a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a>, lalu install & tunggu sampai selesai</li>
+ <li>Setelah itu, buka <i>cmd/terminal</i>, kemudian masuk ke folder ini dengan <b>cd M3119001_AdamArthurFaizal_TiA_UASPrakDesweb2020</b></li>
+ <li>Lalu ketik <b>npm install</b> untuk men-<i>download dependency</i> yang dibutuhkan, tunggu beberapa saat</li>
+ <li>Setelah prosesnya selesai, jalankan <i>local development server</i>-nya dengan <b>npm run server</b> </li>
+ <li>Kemudian buka <b>https://localhost:3000</b> di browsermu</li>
+</ol>
 
 ## Documentation
 
-Visit <a aria-label="next.js learn" href="https://nextjs.org/docs">https://nextjs.org/docs</a> to view the documentation.
+Visit [https://nextjs.org/docs](https://nextjs.org/docs) to view the documentation.
 
 ## Contributing
 
-Please see our [contributing.md](/contributing.md).
+Please see our [CONTRIBUTING.md](/contributing.md).
 
 ## Authors
 
-- Arunoda Susiripala ([@arunoda](https://twitter.com/arunoda)) – [Vercel](https://vercel.com)
-- Tim Neutkens ([@timneutkens](https://twitter.com/timneutkens)) – [Vercel](https://vercel.com)
-- Naoyuki Kanezawa ([@nkzawa](https://twitter.com/nkzawa)) – [Vercel](https://vercel.com)
-- Tony Kovanen ([@tonykovanen](https://twitter.com/tonykovanen)) – [Vercel](https://vercel.com)
-- Guillermo Rauch ([@rauchg](https://twitter.com/rauchg)) – [Vercel](https://vercel.com)
-- Dan Zajdband ([@impronunciable](https://twitter.com/impronunciable)) – Knight-Mozilla / Coral Project
+- Adam Arthur Faizal ([@adam.arthur_f](https://instagram.com/adam.arthur_f)) – [Vercel](https://vercel.com)

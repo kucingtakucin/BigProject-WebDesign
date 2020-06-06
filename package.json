@@ -1,5 +1,5 @@
 {
-    "homepage": "https://adamarthurf.github.io/BigProject-WebDesign/",
+    "homepage": "https://labkom-mipa-uns.now.sh/",
     "name": "react-app",
     "version": "0.1.0",
     "private": true,
@@ -22,10 +22,10 @@
     },
     "scripts": {
         "server": "node src/server.js",
-        "build": "next build",
+        "build": "next build && next export",
         "start": "cross-env NODE_ENV=production node src/server.js",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d .next"
+        "deploy": "gh-pages -d out"
     },
     "eslintConfig": {
         "extends": "react-app"
