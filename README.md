@@ -32,7 +32,7 @@ Visit [https://nextjs.org/docs](https://nextjs.org/docs) to view the documentati
 
 ## Contributing
 
-Please see our [CONTRIBUTING.md](/contributing.md).
+Please see our [CONTRIBUTING.md](/CONTRIBUTING.md).
 
 ## Authors
 
