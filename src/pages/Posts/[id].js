@@ -10,16 +10,12 @@ import {AppFooter, AppHeader, AppNavbar} from "../index";
 import {Breadcrumb, BreadcrumbItem, Col, Container, Row} from "reactstrap";
 import Link from "next/link";
 import AppAside from "../../components/AppAside";
-import {useRouter} from "next/router";
 
-function Post() {
-    const router = useRouter()
-    const {id} = router.query
-    console.log(router)
+const Post = ({title}) => {
     return (
         <React.Fragment>
             <Head>
-                <title>Laboratorium Komputasi FMIPA UNS | Posts | {id}</title>
+                <title>Laboratorium Komputasi FMIPA UNS | Posts | {title}</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
@@ -32,13 +28,13 @@ function Post() {
                         <Breadcrumb>
                             <BreadcrumbItem><Link href="/"><a>Beranda</a></Link></BreadcrumbItem>
                             <BreadcrumbItem active>Post</BreadcrumbItem>
-                            <BreadcrumbItem active>{id}</BreadcrumbItem>
+                            <BreadcrumbItem active>{title}</BreadcrumbItem>
                         </Breadcrumb>
                         <Row>
                             <Col lg="9">
                                 <Row>
                                     <Col md="12">
-                                        <h1 className="border-bottom font-weight-bold pl-4 pr-4 mb-4">{id}</h1>
+                                        <h1 className="border-bottom font-weight-bold pl-4 pr-4 mb-4">{title}</h1>
                                     </Col>
                                 </Row>
                                 <Row>
@@ -96,5 +92,8 @@ function Post() {
     );
 }
 
+Post.getInitialProps = async ({ query }) => {
+    return {id: query.id, title: query.title}
+}
 
 export default Post

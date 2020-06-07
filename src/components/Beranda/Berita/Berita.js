@@ -16,8 +16,9 @@ import {
     Container, Pagination, PaginationItem, PaginationLink,
     Row
 } from "reactstrap";
-import AppAside from "../../AppAside";
-import Link from "next/link";
+import AppAside from "../../AppAside"
+import Link from "next/link"
+const slugify = require('slugify')
 
 class Berita extends Component {
     constructor(props) {
@@ -59,7 +60,8 @@ class Berita extends Component {
                                     <CardText>
                                         <small className="text-muted">Last updated 3 mins ago</small>
                                     </CardText>
-                                    <Link href={`/Posts/${this.state.judul1}`}>
+                                    <Link href={`/Posts/[id]?title=${this.state.judul1}`}
+                                          as={`/Posts/${slugify(this.state.judul1)}`}>
                                         <a>
                                             <Button color="info">Selengkapnya ...</Button>
                                         </a>
@@ -76,7 +78,9 @@ class Berita extends Component {
                                     <CardText>
                                         <small className="text-muted">Last updated 3 mins ago</small>
                                     </CardText>
-                                    <Link href={`/Posts/${this.state.judul2}`}>
+                                    <Link href={`/Posts/[id]?title=${this.state.judul2}`}
+                                          as={`/Posts/${slugify(this.state.judul2)}`}>
+
                                         <a>
                                             <Button color="info">Selengkapnya ...</Button>
                                         </a>
@@ -93,7 +97,8 @@ class Berita extends Component {
                                     <CardText>
                                         <small className="text-muted">Last updated 3 mins ago</small>
                                     </CardText>
-                                    <Link href={`/Posts/${this.state.judul3}`}>
+                                    <Link href={`/Posts/[id]?title=${this.state.judul3}`}
+                                          as={`/Posts/${slugify(this.state.judul3)}`}>
                                         <a>
                                             <Button color="info">Selengkapnya ...</Button>
                                         </a>
@@ -111,7 +116,9 @@ class Berita extends Component {
                                     <CardText>
                                         <small className="text-muted">Last updated 3 mins ago</small>
                                     </CardText>
-                                    <Link href={`/Posts/${this.state.judul4}`}>
+                                    <Link href={`/Posts/[id]?title=${this.state.judul4}`}
+                                          as={`/Posts/${slugify(this.state.judul4)}`}>
+
                                         <a>
                                             <Button color="info">Selengkapnya ...</Button>
                                         </a>
@@ -127,7 +134,8 @@ class Berita extends Component {
                                     <CardText>
                                         <small className="text-muted">Last updated 3 mins ago</small>
                                     </CardText>
-                                    <Link href={`/Posts/${this.state.judul5}`}>
+                                    <Link href={`/Posts/[id]?title=${this.state.judul5}`}
+                                          as={`/Posts/${slugify(this.state.judul5)}`}>
                                         <a>
                                             <Button color="info">Selengkapnya ...</Button>
                                         </a>
@@ -143,7 +151,9 @@ class Berita extends Component {
                                     <CardText>
                                         <small className="text-muted">Last updated 3 mins ago</small>
                                     </CardText>
-                                    <Link href={`/Posts/${this.state.judul6}`}>
+                                    <Link href={`/Posts/[id]?title=${this.state.judul6}`}
+                                          as={`/Posts/${slugify(this.state.judul6)}`}>
+
                                         <a>
                                             <Button color="info">Selengkapnya ...</Button>
                                         </a>

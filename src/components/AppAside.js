@@ -7,6 +7,7 @@
 import React, {Component} from 'react';
 import {Col, Media, Row} from "reactstrap";
 import Link from "next/link";
+const slugify = require('slugify')
 
 class AppAside extends Component {
     constructor(props) {
@@ -39,7 +40,7 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                    <Link href={`/Posts/[id]?title=Lorem ipsum dolor sit amet`} as={`/Posts/${slugify('Lorem ipsum dolor sit amet')}`}>
                                         <a>
                                             <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
                                         </a>
@@ -53,7 +54,7 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                    <Link href={`/Posts/[id]?title=Lorem ipsum dolor sit amet`} as={`/Posts/${slugify('Lorem ipsum dolor sit amet')}`}>
                                         <a>
                                             <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
                                         </a>
@@ -67,7 +68,7 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                    <Link href={`/Posts/[id]?title=Lorem ipsum dolor sit amet`} as={`/Posts/${slugify('Lorem ipsum dolor sit amet')}`}>
                                         <a>
                                             <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
                                         </a>
@@ -81,7 +82,7 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                    <Link href={`/Posts/[id]?title=Lorem ipsum dolor sit amet`} as={`/Posts/${slugify('Lorem ipsum dolor sit amet')}`}>
                                         <a>
                                             <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
                                         </a>
@@ -104,7 +105,7 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                    <Link href={`/Posts/[id]?title=Lorem ipsum dolor sit amet`} as={`/Posts/${slugify('Lorem ipsum dolor sit amet')}`}>
                                         <a>
                                             <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
                                         </a>
@@ -118,7 +119,7 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                    <Link href={`/Posts/[id]?title=Lorem ipsum dolor sit amet`} as={`/Posts/${slugify('Lorem ipsum dolor sit amet')}`}>
                                         <a>
                                             <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
                                         </a>
@@ -132,7 +133,7 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                    <Link href={`/Posts/[id]?title=Lorem ipsum dolor sit amet`} as={`/Posts/${slugify('Lorem ipsum dolor sit amet')}`}>
                                         <a>
                                             <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
                                         </a>
@@ -146,7 +147,7 @@ class AppAside extends Component {
                             </Media>
                             <Media body className="m-auto">
                                 <Media heading className="m-auto">
-                                    <Link href={`/Posts/Lorem ipsum dolor sit amet`}>
+                                    <Link href={`/Posts/[id]?title=Lorem ipsum dolor sit amet`} as={`/Posts/${slugify('Lorem ipsum dolor sit amet')}`}>
                                         <a>
                                             <h6 className="pl-1 m-auto">Lorem ipsum dolor sit amet.</h6>
                                         </a>

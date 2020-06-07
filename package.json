@@ -18,7 +18,8 @@
         "react-dom": "16.13.1",
         "react-transition-group": "^4.4.1",
         "reactstrap": "^8.4.1",
-        "sass": "^1.26.5"
+        "sass": "^1.26.5",
+        "slugify": "^1.4.0"
     },
     "scripts": {
         "server": "node src/server.js",
