@@ -35,7 +35,7 @@ class Berita extends Component {
             judul3: `SASS : CSS with superpowers`,
             judul4: `Ruby on Rails : Web Development that's doesn't hurt`,
             judul5: `Django : The Web framework for perfectionists with deadlines`,
-            judul6: `React : A Javascript library for building user interfaces`,
+            judul6: `Laravel : The PHP Framework for Web Artisans`,
         }
     }
 
