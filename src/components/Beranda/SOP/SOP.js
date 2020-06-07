@@ -64,7 +64,7 @@ class SOP extends Component {
                                         SOP Peminjaman Alat
                                     </Media>
                                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ...</p>
-                                    <Link href="/Layanan/Peminjaman-Alat"><a  className="btn btn-info">Selengkapnya ...</a></Link>
+                                    <Link href="/Layanan/PeminjamanAlat"><a  className="btn btn-info">Selengkapnya ...</a></Link>
                                 </Media>
                             </Media>
                             <Media className="mt-2 border rounded">
@@ -76,7 +76,7 @@ class SOP extends Component {
                                         SOP Peminjaman Studio
                                     </Media>
                                     <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus ...</p>
-                                    <Link href="/Layanan/Peminjaman-Studio"><a  className="btn btn-info">Selengkapnya ...</a></Link>
+                                    <Link href="/Layanan/PeminjamanStudio"><a  className="btn btn-info">Selengkapnya ...</a></Link>
                                 </Media>
                             </Media>
                         </Col>
